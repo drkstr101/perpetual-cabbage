@@ -50,7 +50,10 @@
       "!{projectRoot}/eslint.config.js",
       "!{projectRoot}/.stylelintrc(.(json|yml|yaml|js))?"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": [
+      "{workspaceRoot}/tailwind-workspace-presets.js",
+      "{workspaceRoot}/stackbit.config.ts"
+    ]
   },
   "generators": {
     "@nx/react": {
