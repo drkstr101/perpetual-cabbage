@@ -10,6 +10,7 @@ export default defineStackbitConfig({
   ssgName: 'nextjs',
   buildCommand: 'nx build home',
   devCommand: 'nx serve home --port {PORT}',
+  installCommand: 'yarn install',
   nodeVersion: '18',
   contentSources: [
     new GitContentSource({
