@@ -1,9 +1,6 @@
 import { GitContentSource } from '@stackbit/cms-git';
 import { defineStackbitConfig } from '@stackbit/types';
-import { button } from './.stackbit/models/button';
-import { hero } from './.stackbit/models/hero';
-import { page } from './.stackbit/models/page';
-import { stats } from './.stackbit/models/stats';
+import model from './libs/model/src/index';
 
 export default defineStackbitConfig({
   stackbitVersion: '~0.6.0',
@@ -12,11 +9,15 @@ export default defineStackbitConfig({
   devCommand: 'nx serve home --port {PORT}',
   installCommand: 'yarn install',
   nodeVersion: '18',
+  presetSource: {
+    type: 'files',
+    presetDirs: ['.stackbit/presets'],
+  },
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
       contentDirs: ['content'],
-      models: [button, hero, page, stats],
+      models: Object.values(model),
       assetsConfig: {
         referenceType: 'static',
         staticDir: 'apps/home/public',

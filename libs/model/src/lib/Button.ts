@@ -1,7 +1,7 @@
 import { ObjectModel } from '@stackbit/types';
 
-export const button: ObjectModel = {
-  name: 'button',
+export const Button: ObjectModel = {
+  name: 'Button',
   type: 'object',
   fields: [
     { name: 'label', type: 'string', default: 'Get Started' },

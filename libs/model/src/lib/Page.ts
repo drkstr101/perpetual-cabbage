@@ -1,13 +1,15 @@
 import { PageModel } from '@stackbit/types';
+import { Hero } from './Hero';
+import { Stats } from './Stats';
 
-export const page: PageModel = {
-  name: 'page',
+export const Page: PageModel = {
+  name: 'Page',
   type: 'page',
   hideContent: true,
   urlPath: '/{slug}',
   filePath: 'content/pages/{slug}.md',
   fields: [
     { name: 'title', type: 'string', required: true },
-    { name: 'sections', type: 'list', items: { type: 'model', models: ['hero', 'stats'] } },
+    { name: 'sections', type: 'list', items: { type: 'model', models: [Hero.name, Stats.name] } },
   ],
 };

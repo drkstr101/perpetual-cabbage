@@ -1,7 +1,8 @@
 import { ObjectModel } from '@stackbit/types';
+import { Button } from './Button';
 
-export const hero: ObjectModel = {
-  name: 'hero',
+export const Hero: ObjectModel = {
+  name: 'Hero',
   type: 'object',
   fields: [
     { name: 'heading', type: 'string' },
@@ -14,7 +15,7 @@ export const hero: ObjectModel = {
         { name: 'alt', type: 'string' },
       ],
     },
-    { name: 'button', type: 'model', models: ['button'] },
+    { name: 'button', type: 'model', models: [Button.name] },
     { name: 'theme', type: 'enum', options: ['imgLeft', 'imgRight'] },
   ],
 };

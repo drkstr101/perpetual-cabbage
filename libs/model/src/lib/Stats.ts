@@ -1,7 +1,7 @@
 import { ObjectModel } from '@stackbit/types';
 
-export const stats: ObjectModel = {
-  name: 'stats',
+export const Stats: ObjectModel = {
+  name: 'Stats',
   type: 'object',
   fields: [
     { name: 'heading', type: 'string' },

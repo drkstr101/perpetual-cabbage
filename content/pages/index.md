@@ -1,8 +1,8 @@
 ---
 title: Watheia Labs
-type: page
+type: Page
 sections:
-  - type: hero
+  - type: Hero
     heading: This is your main value proposition
     body: >
       And a super compelling supporting paragraph that makes the user
@@ -15,7 +15,7 @@ sections:
       src: /images/fpo-shapes.png
       alt: Stackbit Shapes
     theme: imgRight
-  - type: stats
+  - type: Stats
     heading: Don't take our word for it
     body: Look at these amazing numbers!
     stats:
