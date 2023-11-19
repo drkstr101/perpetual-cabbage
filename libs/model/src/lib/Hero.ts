@@ -11,7 +11,7 @@ export const Hero: ObjectModel = {
       name: 'image',
       type: 'object',
       fields: [
-        { name: 'src', type: 'image', default: '/images/fpo-shapes.png' },
+        { name: 'src', type: 'image', required: true, default: '/images/fpo-shapes.png' },
         { name: 'alt', type: 'string' },
       ],
     },
