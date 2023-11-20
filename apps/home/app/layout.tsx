@@ -1,4 +1,5 @@
-import './global.css';
+// import global styles
+import '@watheia/cabbage.base-ui';
 
 export const metadata = {
   title: 'Welcome to home',
