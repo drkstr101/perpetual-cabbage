@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@watheia/cabbage.api": ["libs/api/src/index.ts"],
       "@watheia/cabbage.model": ["libs/model/src/index.ts"]
     }
   },
