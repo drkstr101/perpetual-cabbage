@@ -1,15 +1,6 @@
-import { getPageFromSlug } from '@watheia/cabbage.api';
 import styles from './page.module.css';
 
-export async function getData() {
-  // const slug = '/' + (params?.slug ?? ['']).join('/');
-  const page = await getPageFromSlug('/');
-  return { props: { page } };
-}
-
 export default async function Index() {
-  const data = await getData();
-  console.log('Index(props)', data);
   /*
    * Replace the elements below with your own.
    *

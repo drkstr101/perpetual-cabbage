@@ -1,1 +1,1 @@
-export { getPageFromSlug, getPagePaths } from './lib/api';
+export * from './lib/resolver';
