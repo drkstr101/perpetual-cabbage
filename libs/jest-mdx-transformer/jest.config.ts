@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { readFileSync } from 'fs';
+import type { Config } from 'jest';
 
 // Reading the SWC compilation config and remove the "exclude"
 // for the test files to be compiled by SWC
@@ -22,7 +23,10 @@ export default {
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@mdx-js/mdx|develop|markdown-extensions|unist-util-stringify-position|vfile|vfile-message)/)',
+  ],
+  moduleFileExtensions: ['ts', 'js', 'json', 'mdx', 'html'],
   testEnvironment: 'node',
   coverageDirectory: '../../coverage/libs/jest-mdx-transformer',
-};
+} satisfies Config;
