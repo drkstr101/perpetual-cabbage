@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@watheia/cabbage.base-ui": ["libs/base-ui/src/index.ts"]
+      "@watheia/cabbage.base-ui": ["libs/base-ui/src/index.ts"],
+      "@watheia/jest-mdx-transformer": ["libs/jest-mdx-transformer/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
