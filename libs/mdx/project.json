@@ -1,0 +1,35 @@
+{
+  "name": "mdx",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mdx/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/mdx",
+        "main": "libs/mdx/src/index.ts",
+        "tsConfig": "libs/mdx/tsconfig.lib.json",
+        "generateExportsField": true,
+        "assets": [],
+        "project": "libs/mdx/package.json",
+        "compiler": "swc",
+        "format": ["cjs", "esm"],
+        "rollupConfig": ["libs/mdx/rollup.config.js"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs mdx {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/mdx/**/*.ts", "libs/mdx/package.json"]
+      }
+    }
+  },
+  "tags": []
+}
