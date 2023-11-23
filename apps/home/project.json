@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/home",
   "projectType": "application",
+  "implicitDependencies": ["mdx"],
   "targets": {
     "build": {
       "executor": "@nx/next:build",
@@ -21,6 +22,7 @@
     "serve": {
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
+      "dependsOn": ["^build"],
       "options": {
         "buildTarget": "home:build",
         "dev": true
