@@ -23,9 +23,6 @@ export default {
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],
   },
-  transformIgnorePatterns: [
-    '/node_modules/(?!(@mdx-js/mdx|develop|markdown-extensions|unist-util-stringify-position|vfile|vfile-message)/)',
-  ],
   moduleFileExtensions: ['ts', 'js', 'json', 'mdx', 'html'],
   testEnvironment: 'node',
   coverageDirectory: '../../coverage/libs/jest-mdx-transformer',

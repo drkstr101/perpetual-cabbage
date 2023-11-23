@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/jest-mdx-transformer/src",
   "projectType": "library",
+  "implicitDependencies": ["mdx"],
   "targets": {
     "build": {
       "executor": "@nx/rollup:rollup",
@@ -34,6 +35,7 @@
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "dependsOn": ["^build"],
       "options": {
         "jestConfig": "libs/jest-mdx-transformer/jest.config.ts"
       }
