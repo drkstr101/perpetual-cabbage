@@ -2,9 +2,12 @@ import assert from 'assert';
 import * as cheerio from 'cheerio';
 import { Feed } from 'feed';
 
-export async function GET(req: Request) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  process.env.NEXT_PUBLIC_VERCEL_URL ??
+  'http://localhost:4200';
 
+export async function GET(req: Request) {
   if (!siteUrl) {
     throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable');
   }
