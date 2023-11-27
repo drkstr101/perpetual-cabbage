@@ -1,4 +1,4 @@
-import { CompileOptions } from "@mdx-js/mdx";
+import { CompileOptions } from '@mdx-js/mdx';
 import rehypePrism from '@mapbox/rehype-prism';
 import remarkGfm from 'remark-gfm';
 
