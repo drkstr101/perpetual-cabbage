@@ -19,7 +19,8 @@
       "@/components/*": ["apps/home/components/*"],
       "@/images/*": ["apps/home/images/*"],
       "@/lib/*": ["apps/home/lib/*"],
-      "@/styles/*": ["apps/home/styles/*"]
+      "@/styles/*": ["apps/home/styles/*"],
+      "@watheia/cabbage-api": ["libs/cabbage-api/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

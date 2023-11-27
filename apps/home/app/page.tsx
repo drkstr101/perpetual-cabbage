@@ -2,10 +2,6 @@ import clsx from 'clsx';
 import Image, { type ImageProps } from 'next/image';
 import Link from 'next/link';
 
-import { Button } from '@/components/Button';
-import { Card } from '@/components/Card';
-import { Container } from '@/components/Container';
-import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons';
 import logoAirbnb from '@/images/logos/airbnb.svg';
 import logoFacebook from '@/images/logos/facebook.svg';
 import logoPlanetaria from '@/images/logos/planetaria.svg';
@@ -15,8 +11,12 @@ import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
 import image4 from '@/images/photos/image-4.jpg';
 import image5 from '@/images/photos/image-5.jpg';
-import { getAllArticles, type ArticleWithSlug } from '@/lib/articles';
-import { formatDate } from '@/lib/formatDate';
+import { getAllArticles, type ArticleWithSlug } from '@watheia/cabbage-api';
+import { Button } from '../components/Button';
+import { Card } from '../components/Card';
+import { Container } from '../components/Container';
+import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from '../components/SocialIcons';
+import { formatDate } from '../lib/formatDate';
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

@@ -1,9 +1,9 @@
 import { type Metadata } from 'next';
 
-import { Card } from '@/components/Card';
-import { SimpleLayout } from '@/components/SimpleLayout';
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles';
-import { formatDate } from '@/lib/formatDate';
+import { getAllArticles, type ArticleWithSlug } from '@watheia/cabbage-api';
+import { Card } from '../../components/Card';
+import { SimpleLayout } from '../../components/SimpleLayout';
+import { formatDate } from '../../lib/formatDate';
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
