@@ -1,8 +1,8 @@
 'use client';
 
-import { createContext, useEffect, useRef } from 'react';
-import { usePathname } from 'next/navigation';
 import { ThemeProvider, useTheme } from 'next-themes';
+import { usePathname } from 'next/navigation';
+import { createContext, useEffect, useRef } from 'react';
 
 function usePrevious<T>(value: T) {
   const ref = useRef<T>();
@@ -40,7 +40,7 @@ function ThemeWatcher() {
 
 export const AppContext = createContext<{ previousPathname?: string }>({});
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function UIProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const previousPathname = usePrevious(pathname);
 

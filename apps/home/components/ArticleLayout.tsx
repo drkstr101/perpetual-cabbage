@@ -1,13 +1,13 @@
 'use client';
 
-import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
+import { useContext } from 'react';
 
-import { AppContext } from '@/app/providers';
-import { Container } from '@/components/Container';
-import { Prose } from '@/components/Prose';
-import { type ArticleWithSlug } from '@/lib/articles';
-import { formatDate } from '@/lib/formatDate';
+import { ArticleWithSlug } from '../lib/articles';
+import { formatDate } from '../lib/formatDate';
+import { Container } from './Container';
+import { Prose } from './Prose';
+import { AppContext } from './ui-provider';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

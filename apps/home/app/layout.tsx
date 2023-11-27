@@ -1,7 +1,7 @@
 import { type Metadata } from 'next';
 
 import { Layout } from '../components/Layout';
-import { Providers } from './providers';
+import { UIProvider } from '../components/ui-provider';
 
 import '@/styles/tailwind.css';
 
@@ -28,11 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
-        <Providers>
+        <UIProvider>
           <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
-        </Providers>
+        </UIProvider>
       </body>
     </html>
   );
