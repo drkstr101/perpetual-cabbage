@@ -12,11 +12,11 @@ const siteUrl =
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Spencer Sharp',
-    default: 'Spencer Sharp - Software designer, founder, and amateur astronaut',
+    template: '%s - Watheia Labs',
+    default: 'Watheia Labs - We make technology work for you',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'Watheia Labs, LLC. is a digital agency located in Tri-Cities, Washington, developing quality software for over 20 years.',
   alternates: {
     types: {
       'application/rss+xml': `${siteUrl}/feed.xml`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-black">
+      <body className="flex h-full bg-neutral-50 dark:bg-black">
         <UIProvider>
           <div className="flex w-full">
             <Layout>{children}</Layout>
