@@ -21,6 +21,7 @@
       "@watheia/cabbage.base-ui": ["libs/base-ui/src/index.ts"],
       "@watheia/cabbage.content-api": ["libs/content-api/src/index.ts"],
       "@watheia/cabbage.content-helpers": ["libs/content-helpers/src/index.ts"],
+      "@watheia/cabbage.content-loader": ["libs/content-loader/src/index.ts"],
       "@watheia/cabbage.content-model": ["libs/content-model/src/index.ts"]
     }
   },
