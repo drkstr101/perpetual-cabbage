@@ -52,10 +52,7 @@
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
-      "dependsOn": ["stylelint"],
-      "options": {
-        "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
-      }
+      "dependsOn": ["stylelint"]
     },
     "stylelint": {
       "executor": "nx-stylelint:lint",
