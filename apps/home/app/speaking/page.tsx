@@ -1,8 +1,8 @@
 import { type Metadata } from 'next';
 
-import { Card } from '@/components/Card';
-import { Section } from '@/components/Section';
-import { SimpleLayout } from '@/components/SimpleLayout';
+import { Card } from '../../components/Card';
+import { Section } from '../../components/Section';
+import { SimpleLayout } from '../../components/SimpleLayout';
 
 function SpeakingSection({ children, ...props }: React.ComponentPropsWithoutRef<typeof Section>) {
   return (

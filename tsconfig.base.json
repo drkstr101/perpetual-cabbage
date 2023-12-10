@@ -18,9 +18,11 @@
       "@/app/*": ["apps/home/app/*"],
       "@/components/*": ["apps/home/components/*"],
       "@/images/*": ["apps/home/images/*"],
-      "@/lib/*": ["apps/home/lib/*"],
       "@/styles/*": ["apps/home/styles/*"],
-      "@watheia/cabbage-api": ["libs/cabbage-api/src/index.ts"]
+      "@watheia/cabbage.base-ui": ["libs/base-ui/src/index.ts"],
+      "@watheia/cabbage.content-api": ["libs/content-api/src/index.ts"],
+      "@watheia/cabbage.content-helpers": ["libs/content-helpers/src/index.ts"],
+      "@watheia/cabbage.content-model": ["libs/content-model/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

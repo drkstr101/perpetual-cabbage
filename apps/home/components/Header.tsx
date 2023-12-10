@@ -1,15 +1,15 @@
 'use client';
 
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Popover, Transition } from '@headlessui/react';
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useTheme } from 'next-themes';
-import { Popover, Transition } from '@headlessui/react';
-import clsx from 'clsx';
+import { Fragment, useEffect, useRef, useState } from 'react';
 
-import { Container } from '@/components/Container';
-import avatarImage from '@/images/avatar.jpg';
+import avatarImage from '@/images/avatar.png';
+import { Container } from './Container';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

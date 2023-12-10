@@ -1,13 +1,17 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useContext } from 'react';
+import { HtmlHTMLAttributes, useContext } from 'react';
 
-import { ArticleWithSlug } from '../lib/articles';
-import { formatDate } from '../lib/formatDate';
+import { ArticleProps } from '@watheia/cabbage.content-model';
+import { formatDate } from '@watheia/cabbage.content-helpers';
 import { Container } from './Container';
 import { Prose } from './Prose';
 import { AppContext } from './ui-provider';
+
+export interface ArticleLayoutProps extends HtmlHTMLAttributes<HTMLDivElement> {
+  article: ArticleProps;
+}
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -22,18 +26,12 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-export function ArticleLayout({
-  article,
-  children,
-}: {
-  article: ArticleWithSlug;
-  children: React.ReactNode;
-}) {
+export function ArticleLayout({ article, children, ...props }: ArticleLayoutProps) {
   const router = useRouter();
   const { previousPathname } = useContext(AppContext);
 
   return (
-    <Container className="mt-16 lg:mt-32">
+    <Container className="mt-16 lg:mt-32" {...props}>
       <div className="xl:relative">
         <div className="mx-auto max-w-2xl">
           {previousPathname && (

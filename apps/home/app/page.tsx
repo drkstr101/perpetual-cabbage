@@ -11,12 +11,12 @@ import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
 import image4 from '@/images/photos/image-4.jpg';
 import image5 from '@/images/photos/image-5.jpg';
-import { getAllArticles, type ArticleWithSlug } from '@watheia/cabbage-api';
+import { getAllArticles, type ArticleWithSlug } from '@watheia/cabbage.content-api';
 import { Button } from '../components/Button';
 import { Card } from '../components/Card';
 import { Container } from '../components/Container';
 import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from '../components/SocialIcons';
-import { formatDate } from '../lib/formatDate';
+import { formatDate } from '@watheia/cabbage.content-helpers';
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

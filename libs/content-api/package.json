@@ -1,0 +1,10 @@
+{
+  "name": "@watheia/cabbage.content-api",
+  "version": "0.0.1",
+  "dependencies": {
+    "@watheia/cabbage.content-model": "*",
+    "fast-glob": "^3.3.2"
+  },
+  "type": "commonjs",
+  "main": "./index.cjs"
+}
