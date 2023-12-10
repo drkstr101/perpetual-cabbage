@@ -4,7 +4,12 @@ import Link from 'next/link';
 import clsx from 'clsx';
 
 import { Container } from '../../components/Container';
-import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from '../../components/SocialIcons';
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from '../../components/SocialIcons';
 import portraitImage from '@/images/portrait.jpg';
 
 function SocialLink({
