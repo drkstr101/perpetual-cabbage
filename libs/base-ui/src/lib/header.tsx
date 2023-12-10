@@ -8,8 +8,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment, useEffect, useRef, useState } from 'react';
 
-import avatarImage from '@/images/avatar.png';
-import { Container } from './Container';
+import { Container } from './container';
+
+// TODO - externalize image asset
+import avatarImage from '@content/images/avatar.png';
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

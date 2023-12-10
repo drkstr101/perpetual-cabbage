@@ -1,9 +1,9 @@
 import { type Metadata } from 'next';
 
-import { Layout } from '../components/Layout';
-import { UIProvider } from '../components/ui-provider';
+import { Layout, UIProvider } from '@watheia/cabbage.base-ui';
 
-import '@/styles/tailwind.css';
+// import global styles
+import '@watheia/cabbage.base-ui';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??

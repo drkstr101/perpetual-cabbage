@@ -1,5 +1,5 @@
-import { Button } from '../components/Button';
-import { Container } from '../components/Container';
+import { Button } from '@watheia/cabbage.base-ui';
+import { Container } from '@watheia/cabbage.base-ui';
 
 export default function NotFound() {
   return (

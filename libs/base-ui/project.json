@@ -34,6 +34,13 @@
       "options": {
         "jestConfig": "libs/base-ui/jest.config.ts"
       }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/base-ui/**/*.css", "libs/base-ui/**/*.scss"]
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { ContainerInner, ContainerOuter } from './Container';
+import { ContainerInner, ContainerOuter } from './container';
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (

@@ -1,8 +1,8 @@
 import { type Metadata } from 'next';
 
-import { Card } from '../../components/Card';
-import { Section } from '../../components/Section';
-import { SimpleLayout } from '../../components/SimpleLayout';
+import { Card } from '@watheia/cabbage.base-ui';
+import { Section } from '@watheia/cabbage.base-ui';
+import { SimpleLayout } from '@watheia/cabbage.base-ui';
 
 function SpeakingSection({ children, ...props }: React.ComponentPropsWithoutRef<typeof Section>) {
   return (

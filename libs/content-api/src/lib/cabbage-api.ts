@@ -7,7 +7,7 @@ export interface ArticleWithSlug extends ArticleProps {
 }
 
 async function importArticle(articleFilename: string): Promise<ArticleWithSlug> {
-  const { article } = (await import(`@/app/articles/${articleFilename}`)) as {
+  const { article } = (await import(`@content/pages/articles/${articleFilename}`)) as {
     article: ArticleProps;
   };
 

@@ -1,6 +1,4 @@
-import { Card } from '../../components/Card';
-import { Section } from '../../components/Section';
-import { SimpleLayout } from '../../components/SimpleLayout';
+import { Card, Section, SimpleLayout } from '@watheia/cabbage.base-ui';
 
 function ToolsSection({ children, ...props }: React.ComponentPropsWithoutRef<typeof Section>) {
   return (

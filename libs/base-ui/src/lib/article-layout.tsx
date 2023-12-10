@@ -1,12 +1,12 @@
 'use client';
 
+import { formatDate } from '@watheia/cabbage.content-helpers';
+import { ArticleProps } from '@watheia/cabbage.content-model';
 import { useRouter } from 'next/navigation';
 import { HtmlHTMLAttributes, useContext } from 'react';
 
-import { ArticleProps } from '@watheia/cabbage.content-model';
-import { formatDate } from '@watheia/cabbage.content-helpers';
-import { Container } from './Container';
-import { Prose } from './Prose';
+import { Container } from './container';
+import { Prose } from './prose';
 import { AppContext } from './ui-provider';
 
 export interface ArticleLayoutProps extends HtmlHTMLAttributes<HTMLDivElement> {

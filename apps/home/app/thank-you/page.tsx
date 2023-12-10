@@ -1,6 +1,6 @@
 import { type Metadata } from 'next';
 
-import { SimpleLayout } from '../../components/SimpleLayout';
+import { SimpleLayout } from '@watheia/cabbage.base-ui';
 
 export const metadata: Metadata = {
   title: 'You’re subscribed',

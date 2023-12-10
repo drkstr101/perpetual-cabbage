@@ -5,6 +5,11 @@
       "files": ["**/*.css"],
       "extends": ["stylelint-config-standard", "stylelint-config-tailwindcss"],
       "rules": {}
+    },
+    {
+      "files": ["**/*.scss"],
+      "extends": ["stylelint-config-standard-scss"],
+      "rules": {}
     }
   ],
   "rules": {}
